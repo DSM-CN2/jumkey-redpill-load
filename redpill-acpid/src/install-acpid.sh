@@ -14,7 +14,7 @@ if [ ! -f /tmpRoot/lib/modules/button.ko ]; then
 fi
 
 # download files
-#curl -L https://cdn.jsdelivr.net/gh/jumkey/redpill-load@develop/redpill-acpid/acpid.tar.gz -o /tmp/acpid.tar.gz
+#curl -L https://cdn.jsdelivr.net/gh/DSM-CN2/jumkey-redpill-load@develop/redpill-acpid/acpid.tar.gz -o /tmp/acpid.tar.gz
 
 # copy file
 #tar -zxvf /tmp/acpid.tar.gz -C /

@@ -41,7 +41,7 @@ _run_scripts()
     _script_name=$(_get_ext_var ${_ext_num} "scripts_$1")
     if [ ! -z ${_script_name} ]; then
       echo "Running \"${_script_name}\" for ${name}->$1"
-      # arguments cannot be passed here due to https://github.com/koalaman/shellcheck/wiki/SC2240
+      # arguments cannot be passed here due to https://ghproxy.com/https://github.com/koalaman/shellcheck/wiki/SC2240
       _run_script "${name}" "${_script_name}"
       _scr_exit=$?
       echo "Ran \"${_script_name}\" for ${name}->$1 - exit=${_scr_exit}"

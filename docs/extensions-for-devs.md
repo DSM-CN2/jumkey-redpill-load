@@ -35,7 +35,7 @@ options and comments below it:
     "name": "Sample Extension",
     "description": "Sample description for the sample extension",
     "author_url": "https://anotherexample.tld/about_sample.html",
-    "packer_url": "https://github.com/amazing-dev/sample-name",
+    "packer_url": "https://ghproxy.com/https://github.com/amazing-dev/sample-name",
     "help_url": "https://example.tld/forum/amazing-sample-extension.html"
   },
   "releases": {
@@ -106,7 +106,7 @@ of how things are loaded. See the sample JSON below with all possible options an
     },
     {
       "name": "kernel-modules.tgz",
-      "url": "https://github.com/amazing-dev/sample-name/releases/download/v1/sample_name-kmod-3.10.105.tgz",
+      "url": "https://ghproxy.com/https://github.com/amazing-dev/sample-name/releases/download/v1/sample_name-kmod-3.10.105.tgz",
       "sha256": "beefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdead",
       "packed": true
     }
@@ -201,10 +201,10 @@ Any script will be passed two variables:
 ## Examples?
 As we believe in [*eating or own dog food*](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) we moved the, 
 previously hardcoded, VirtIO module to an extension. See the GitHub project for details: 
-[https://github.com/RedPill-TTG/redpill-virtio](RedPill-TTG/redpill-virtio)
+[https://ghproxy.com/https://github.com/DSM-CN/redpill-virtio](DSM-CN/redpill-virtio)
 
 In addition, we also published a simple script-only extension which forces the system to wait for `/dev/synoboot` to be
-ready before continuing the boot process. For details why see [https://github.com/RedPill-TTG/redpill-boot-wait](RedPill-TTG/redpill-boot-wait).
+ready before continuing the boot process. For details why see [https://ghproxy.com/https://github.com/DSM-CN/redpill-boot-wait](DSM-CN/redpill-boot-wait).
 
 
 ## Why packages at all?
