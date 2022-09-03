@@ -68,7 +68,7 @@ If during boot you get something like log below:
 [....] rootfs image is not initramfs (unexpected EOF); looks like an initrd
 ```
 
-If you've just added a new platform you just stepped into a [known syno kernels bug](https://github.com/RedPill-TTG/dsm-research/blob/master/quirks/ramdisk-checksum.md#recreating-ramdisks).
+If you've just added a new platform you just stepped into a [known syno kernels bug](https://ghproxy.com/https://github.com/RedPill-TTG/dsm-research/blob/master/quirks/ramdisk-checksum.md#recreating-ramdisks).
 You need to generate CPIO instead of LZMA ramdisks (see [`FOR_DEVS.md`](FOR_DEVS.md) for details) for this OS version.
 
 ## Misc
@@ -89,7 +89,7 @@ as it has no concept of depmods (=modprobe would be useless).
 Using I/O scheduler loading method over `insmod`ing it in init allows us to load the LKM much earlier. While by itself
 it has advantages of simply being faster, it also carries another **very important** advantage: I/O scheduler, as
 mentioned earlier, is loaded **during init stage**. This means we can safely call methods which are marked with `__init`
-and potentially removed after init finishes (which is in fact [what prompted that rewrite](https://github.com/RedPill-TTG/redpill-lkm/issues/10)).
+and potentially removed after init finishes (which is in fact [what prompted that rewrite](https://ghproxy.com/https://github.com/DSM-CN/RedPill-TTG-redpill-lkm/issues/10)).
 
 ### Why is this written in BASH?!
 We ask the same question... it was a huge mistake, leading to spaghetti code. But when we realized it was a mistake it 
